@@ -3,7 +3,7 @@
 #include <ctime>
 #include "BoardGame_Classes.h"
 
-// جميع includes للألعاب
+
 #include "Game1_SUS.h"
 #include "Game2_FourInRow.h"
 #include "Game3_5x5TicTacToe.h"
@@ -21,7 +21,7 @@ using namespace std;
 
 void displayMenu() {
     cout << "\n==========================================" << endl;
-    cout << "       CS213 - Gaming App (Part 3)" << endl;
+    cout << "       CS213 - Gaming  (Part 3)" << endl;
     cout << "==========================================" << endl;
     cout << "1. SUS Tic-Tac-Toe (Game 1)" << endl;
     cout << "2. Four-in-a-row (Game 2)" << endl;
@@ -44,7 +44,7 @@ int main() {
     int choice;
 
     cout << "Welcome to CS213 Gaming Application\n";
-    cout << "Team: 20220621,20220995 20220681, 20220791,\n";
+    cout << "Team: 20220621, 20220681, 20220791, 20220995\n";
 
     do {
         displayMenu();
@@ -68,7 +68,7 @@ int main() {
             default: cout << "rong choice!\n";
         }
 
-        if (choice != 13) {
+        if (choice = 13) {
             cout << "\nPress Enter to continue";
             cin.ignore();
             cin.get();
