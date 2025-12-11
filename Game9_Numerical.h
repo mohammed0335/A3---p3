@@ -20,6 +20,7 @@ public:
         return true;
     }
 
+
     bool is_win(Player<int>* player) override {
         for (int i = 0; i < 3; i++) {
             if (board[i][0] + board[i][1] + board[i][2] == 15 &&
@@ -33,6 +34,7 @@ public:
             board[0][2] != 0 && board[1][1] != 0 && board[2][0] != 0) return true;
         return false;
     }
+
 
     bool is_lose(Player<int>* player) override { return false; }
     bool is_draw(Player<int>* player) override { return n_moves == 9; }
@@ -64,6 +66,7 @@ public:
         }
     }
 
+
     void display_board_matrix(const vector<vector<int>>& matrix) const override {
         if (matrix.empty()) return;
         int rows = matrix.size();
@@ -86,6 +89,7 @@ public:
     }
 };
 
+
 void runNumericalGame() {
     Numerical_Board* board = new Numerical_Board();
     Numerical_UI* ui = new Numerical_UI();
@@ -103,5 +107,7 @@ void runNumericalGame() {
     delete players[1];
     delete[] players;
 }
+
+
 
 #endif
