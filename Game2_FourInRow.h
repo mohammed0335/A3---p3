@@ -65,7 +65,7 @@ public:
     FourInRow_UI() : UI<char>("Four-in-a-row", 3) {}
 
     Move<char>* get_move(Player<char>* player) override {
-        // إذا كان اللاعب AI، استدعاء get_move الخاص به
+        
         if (player->get_type() == PlayerType::AI) {
             FourInRow_AI_Player* aiPlayer = dynamic_cast<FourInRow_AI_Player*>(player);
             if (aiPlayer) {
@@ -73,7 +73,7 @@ public:
             }
         }
 
-        // إذا كان لاعب بشري
+        
         int y;
         cout << "\n" << player->get_name() << ", enter column (0-6): ";
         cin >> y;
@@ -143,5 +143,6 @@ void runFourInRowGame() {
     delete players[1];
     delete[] players;
 }
+
 
 #endif
