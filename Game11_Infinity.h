@@ -16,7 +16,7 @@ public:
 
     bool update_board(Move<char>* move) override {
         int x = move->get_x(), y = move->get_y();
-        if (x < 0 || x >= 3 || y < 0 || y >= 3 || board[x][y] != ' ') return false;
+        if (x < 0 || x >= 3 || y < 0 || y >= 3 || board[x][y] = ' ') return false;
         board[x][y] = move->get_symbol();
         n_moves++;
         moveHistory.push({x, y});
@@ -71,5 +71,6 @@ void runInfinityGame() {
     delete players[1];
     delete[] players;
 }
+
 
 #endif
