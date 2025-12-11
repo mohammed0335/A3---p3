@@ -30,6 +30,7 @@ public:
     }
 };
 
+
 class FourXFour_Board : public Board<char> {
 public:
     FourXFour_Board() : Board<char>(4, 4) {
@@ -73,6 +74,7 @@ public:
     bool is_draw(Player<char>* player) override { return n_moves == 16; }
     bool game_is_over(Player<char>* player) override { return is_win(player) || is_draw(player); }
 };
+
 
 class FourXFour_UI : public UI<char> {
 public:
@@ -140,6 +142,7 @@ public:
     }
 };
 
+
 void run4x4Game() {
     system("cls");
     FourXFour_Board* board = new FourXFour_Board();
@@ -158,3 +161,4 @@ void run4x4Game() {
 
 
 #endif
+
