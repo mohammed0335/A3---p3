@@ -45,6 +45,7 @@ public:
         return new Move<char>(0,0,this->get_symbol());
     }
 };
-
+ 
 
 #endif
+
