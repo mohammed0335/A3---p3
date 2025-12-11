@@ -123,7 +123,7 @@ public:
         cin >> choice2;
 
         string name2;
-        cout << "\nEnter Player 2 name: ";
+        cout << "\nenter Player 2 name: ";
         getline(cin >> ws, name2);
 
         if (choice2 == 2) {
@@ -155,5 +155,6 @@ void run4x4Game() {
     delete players[1];
     delete[] players;
 }
+
 
 #endif
