@@ -19,7 +19,7 @@ public:
             {3,0}, {3,1}, {3,2}, {3,3}, {3,4},
             {4,0}, {4,1}, {4,2}, {4,3}, {4,4}
         };
-
+//
         for(auto cell : pyramidCells) {
             if(b[cell.first][cell.second] == ' ') {
                 cout << this->get_name() << " (AI) plays at (" << cell.first << "," << cell.second << ")" << endl;
@@ -193,5 +193,6 @@ void runPyramidGame() {
     game.run();
     delete board; delete ui; delete players[0]; delete players[1]; delete[] players;
 }
+
 
 #endif
