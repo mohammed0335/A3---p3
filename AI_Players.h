@@ -4,7 +4,6 @@
 #include "BoardGame_Classes.h"
 #include <vector>
 #include <algorithm>
-
 class SUS_AI_Player : public Player<char> {
 public:
     SUS_AI_Player(string name, char symbol) : Player<char>(name, symbol, PlayerType::AI) {}
@@ -46,5 +45,6 @@ public:
         return new Move<char>(0,0,this->get_symbol());
     }
 };
+
 
 #endif
